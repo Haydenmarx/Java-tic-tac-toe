@@ -1,3 +1,5 @@
+package game.gameObjects;
+
 public class X {
   private int topX = 12;
   private int bottomX = 22;

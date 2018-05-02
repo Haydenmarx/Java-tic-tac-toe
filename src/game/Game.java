@@ -1,3 +1,5 @@
+package game;
+
 public class Game {
   public String[] getBoard() {
     return board;
@@ -12,6 +14,16 @@ public class Game {
   }
 
   private String[] board = {null, null, null, null, null, null, null, null, null};
+
+  public String getCurrentPiece() {
+    return currentPiece;
+  }
+
+  public void setCurrentPiece() {
+    currentPiece = currentPiece == "game.gameObjects.X" ? "game.gameObjects.O" : "game.gameObjects.X";
+  }
+
+  private String currentPiece = "game.gameObjects.X";
 
   public static void game() {
 
