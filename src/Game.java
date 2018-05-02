@@ -7,6 +7,10 @@ public class Game {
     board[location] = piece;
   }
 
+  public String getPiece(int location) {
+    return board[location];
+  }
+
   private String[] board = {null, null, null, null, null, null, null, null, null};
 
   public static void game() {
