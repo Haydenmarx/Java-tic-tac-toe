@@ -4,43 +4,15 @@ public class MainApp extends PApplet {
 
   public static void main(String[] args) {
     PApplet.main("MainApp", args);
+    Game newGame = new Game();
+    newGame.setBoard("X", 0);
+    System.out.println(newGame.getBoard());
+    System.out.println("--------------");
+    newGame.setBoard("X", 1);
+    System.out.println(newGame.getBoard());
+    System.out.println("--------------");
+
   }
-
-  Thing myThing;
-//  public void settings() {
-//    size(800, 600);
-//  }
-
-//  public void setup() {
-//    background(255);
-//    myThing = new Thing(this);
-//  }
-//
-//  public void draw() {
-//    stroke(0);
-//    fill(255, 0, 255);
-//    ellipse(width/2, height/2, 100, 100);
-//    myThing.doSomething();
-//    frameRate(12);
-//    println(mouseX + " : " + mouseY);
-//  }
-
-//  public void setup() {
-//    size(100, 100);
-//    noStroke();
-//  }
-//
-//  public void draw() {
-//    float x = mouseX;
-//    float y = mouseY;
-//    float ix = width - mouseX; // Inverse X
-//    float iy = height - mouseY; // Inverse Y
-//    background(126);
-//    fill(255, 150);
-//    ellipse(x, height/2, y, y);
-//    fill(0, 159);
-//    ellipse(ix, height/2, iy, iy);
-//  }
 
   public void setup() {
     size(100, 100);
@@ -54,8 +26,6 @@ public class MainApp extends PApplet {
     line(66, 0, 66, 100);
     line(0, 33, 100, 33);
     line(0, 66, 100, 66);
-
-
 
 
     if (mousePressed == true) {
@@ -83,33 +53,35 @@ public class MainApp extends PApplet {
 
 
     //x + 33
-    line(43, 10, 53, 20);
-    line(43, 20, 53, 10);
+    line(45, 12, 55, 22);
+    line(45, 22, 55, 12);
 
     //x + 66
-    line(76, 10, 86, 20);
-    line(76, 20, 86, 10);
-
-
-    line(10, 43, 20, 53);
-    line(10, 53, 20, 43);
-
-    line(43, 43, 53, 53);
-    line(43, 53, 53, 43);
-
-    line(76, 43, 86, 53);
-    line(76, 53, 86, 43);
+    line(78, 12, 88, 22);
+    line(78, 22, 88, 12);
 
 
 
-    line(10, 76, 20, 86);
-    line(10, 86, 20, 76);
 
-    line(43, 76, 53, 86);
-    line(43, 86, 53, 76);
+    line(12, 45, 22, 55);
+    line(12, 55, 22, 45);
 
-    line(76, 76, 86, 86);
-    line(76, 86, 86, 76);
+    line(45, 45, 55, 55);
+    line(45, 55, 55, 45);
+
+    line(78, 45, 88, 55);
+    line(78, 55, 88, 45);
+
+
+
+    line(12, 78, 22, 88);
+    line(12, 88, 22, 78);
+
+    line(45, 78, 55, 88);
+    line(45, 88, 55, 78);
+
+    line(78, 78, 88, 88);
+    line(78, 88, 88, 78);
 
 
   }
